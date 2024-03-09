@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .item{
+      padding:0.75rem 8rem;
+      text-align: center;
+      color:white;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body style="background-color: #eee;">
+    <div class="mx-auto p-6">
+      <div class="flex flex-wrap">
+        <div class="item bg-blue-400 m-3 rounded-xl">01</div>
+        <div class="item bg-blue-400 m-3 rounded-xl">02</div>
+        <div class="item bg-blue-400 m-3 rounded-xl">03</div>
+    </div>
+    <h5 class="font-medium px-3 my-3">Text wrap reverse</h5>
+      <div class="flex flex-wrap-reverse">
+        <div class="item bg-blue-400 m-3 rounded-xl">01</div>
+        <div class="item bg-blue-400 m-3 rounded-xl">02</div>
+        <div class="item bg-blue-400 m-3 rounded-xl">03</div>
+    </div>
+    <h5 class="font-medium px-3 my-3">Text hover wrap reverse</h5>
+      <div class="flex flex-wrap hover:flex-wrap-reverse">
+        <div class="item bg-blue-400 m-3 rounded-xl">01</div>
+        <div class="item bg-blue-400 m-3 rounded-xl">02</div>
+        <div class="item bg-blue-400 m-3 rounded-xl">03</div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .item{
+      padding:0.75rem 0;
+      text-align: center;
+      color:white;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body style="background-color: #eee;">
+    <div class="mx-auto p-6">
+      <div class="flex">
+        <div class="item bg-blue-400 m-3 w-14 rounded-xl flex-none">01</div>
+        <div class="item bg-blue-400 m-3 w-64 rounded-xl flex-initial">02</div>
+        <div class="item bg-blue-400 m-3 w-32 rounded-xl flex-initial">03</div>
+      </div>
+      <h5 class="font-medium my-3">Flex 1</h5>
+      <div class="flex">
+        <div class="item bg-blue-400 m-3 w-14 rounded-xl flex-none">01</div>
+        <div class="item bg-blue-400 m-3 w-64 rounded-xl flex-1">02</div>
+        <div class="item bg-blue-400 m-3 w-32 rounded-xl flex-1">03</div>
+      </div>
+      <h5 class="font-medium my-3">Flex Auto</h5>
+      <div class="flex">
+        <div class="item bg-blue-400 m-3 w-14 rounded-xl flex-none">01</div>
+        <div class="item bg-blue-400 m-3 w-64 rounded-xl flex-auto">02</div>
+        <div class="item bg-blue-400 m-3 w-32 rounded-xl flex-auto">03</div>
+      </div>
+      <h5 class="font-medium my-3">Flex None</h5>
+      <div class="flex">
+        <div class="item bg-blue-400 m-3 w-14 rounded-xl flex-none">01</div>
+        <div class="item bg-blue-400 m-3 w-64 rounded-xl flex-none">02</div>
+        <div class="item bg-blue-400 m-3 w-32 rounded-xl flex-1">03</div>
+      </div>
+      <div class="flex">
+        <div class="bg-blue-400 w-64 p-2 text-white">
+          <ul>
+            <li>Home</li>
+            <li class="mt-2">About</li>
+            <li class="mt-2">Contact</li>
+          </ul>
+        </div>
+        <div class="item bg-blue-400 m-3 w-32 rounded-xl flex-1">content</div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .item{
+      padding:0.75rem 0;
+      text-align: center;
+      color:white;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body style="background-color: #eee;">
+    <div class="mx-auto p-6">
+      <div class="flex">
+        <div class="item bg-blue-400 m-3 w-14 rounded-xl flex-none">01</div>
+        <div class="item bg-blue-400 m-3 h-14 rounded-xl grow">01</div>
+        <div class="item bg-blue-400 m-3 w-14 rounded-xl flex-none">01</div>
+      </div>
+      <h5 class="my-3 font-medium">Flex Don't Grow</h5>
+      <div class="flex">
+        <div class="item bg-blue-400 m-3 w-14 rounded-xl grow">01</div>
+        <div class="item bg-blue-400 m-3 h-14 w-14  rounded-xl grow-0">02</div>
+        <div class="item bg-blue-400 m-3 w-14 rounded-xl grow">03</div>
+      </div>
+      <h5 class="my-3 font-medium">Flex Shrink</h5>
+      <div class="flex" style="width:10rem;">
+        <div class="item bg-blue-400 m-3 w-14 flex-none rounded-xl">01</div>
+        <div class="item bg-blue-400 m-3 h-14 w-64 shrink  rounded-xl grow-0">02</div>
+        <div class="item bg-blue-400 m-3 w-14 rounded-xl flex-none">03</div>
+      </div>
+      <h5 class="my-3 font-medium">Flex Don't Shrink</h5>
+      <div class="flex" style="width:10rem;">
+        <div class="item bg-blue-400 m-3 w-14 flex-1 rounded-xl">01</div>
+        <div class="item bg-blue-400 m-3 h-14 w-64 shrink-0  rounded-xl grow-0">02</div>
+        <div class="item bg-blue-400 m-3 w-14 rounded-xl flex-1">03</div>
+      </div>
+    </div>
+</body>
+</html>
